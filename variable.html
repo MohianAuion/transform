@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-color: coral;
+            /* --primary-color: crimson; */
+            --secondary-color:green;
+            /* --font-size: 35px; */
+            --font-size:20px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+            background-color: var(--secondary-color);
+        }
+
+        .box {
+            border: 3px solid var(--secondary-color);
+            width: calc(100% - 200px);
+            padding: 10px;
+            text-align: center;
+           margin-left: 80px;
+        }
+
+        .box p {
+            color: var(--primary-color);
+            font-size: var(--font-size);
+        
+
+        }
+
+
+
+           /* button style */
+
+           button{
+            font-size: 40px;
+            padding: 10px;
+            background-color:deeppink;
+            border: 0px;
+            border-radius: 10px;
+            
+        }
+        button:hover{
+            border: 3px solid rgb(71, 70, 2);
+            background-color: rgb(247, 184, 193);
+        }
+        button > a{
+            text-decoration: none;
+            color: rgb(250, 225, 225);
+        }
+        button > a:hover{
+            color: rgb(248, 217, 217);
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="transition.html">
+    <link rel="stylesheet" href="bouncing.html">
+    <link rel="stylesheet" href="cricket.html">
+    <title>CSS Variable</title>
+</head>
+
+<body>
+    <header>
+        <button><a href="index.html">BACK>><a></button>
+    </header>
+    <main>
+        <h2>
+            My custom properties
+        </h2>
+        <h4>
+            Also commonly known as CSS variables
+        </h4>
+        <div class="box">
+            <h3>
+                I am doing something
+            </h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam suscipit, impedit necessitatibus voluptas
+                magnam nobis repellendus explicabo veniam minus consequatur praesentium odio voluptatem sunt nisi! Est odio
+                quam voluptatum illum blanditiis, magnam reiciendis deleniti ipsum alias incidunt, repellat doloribus
+                soluta.
+            </p>
+    
+        </div>
+    </main>
+</body>
+
+</html>

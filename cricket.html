@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRICKET</title>
+    <style>
+        .feild{
+            /* border: 2px solid black; */
+            background-image: url("image/tools/field2.jpg");
+             background-repeat: no-repeat;
+             background-size:cover;
+             background-position: center;
+        }
+        .feild:hover .bat{
+            transform: rotate(-75deg);
+            transform-origin: top right;
+        }
+        .feild:hover .ball{
+            transform: translate(580px, -240px);
+        }
+        .ball{
+            /* height: 50px;
+            width: 50px;
+            background-color: brown;
+            border-radius: 50%; */
+            position: relative;
+            left:769px;
+            bottom: 200px;
+            transition: transform 1s ease-out 0.2s;
+
+        }
+        .bat{
+            transition: transform 0.2s;
+
+        }
+        .glaves{
+            width: 250px;
+            position: relative;
+            left:850px;
+            top: 80px;
+             
+        }
+        .feild:hover .glaves{
+            top:-200px ;
+        }
+
+
+
+           /* button style */
+
+           button{
+            font-size: 40px;
+            padding: 10px;
+            background-color:deeppink;
+            border: 0px;
+            border-radius: 10px;
+            margin-bottom: 70px;
+            
+        }
+        button:hover{
+            border: 3px solid rgb(71, 70, 2);
+            background-color: rgb(247, 184, 193);
+        }
+        button > a{
+            text-decoration: none;
+            color: rgb(250, 225, 225);
+        }
+        button > a:hover{
+            color: rgb(248, 217, 217);
+        }
+
+        
+    </style>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="transition.html">
+    <link rel="stylesheet" href="bouncing.html">
+    <link rel="stylesheet" href="variable.html">
+</head>
+<body>
+<header>
+  <button><a href="transition.html">NEXT>></a></button>  
+</header>
+  <main>
+    <section class="feild" >
+        <div >
+            <img src="image/bat.png" class="bat">
+            <img src="image/tools/gloves.png" class="glaves">
+        </div>
+        <div class="ball">
+    <img src="image/tools/ball.png" alt="">
+        </div>
+       </section>
+  </main>
+</body>
+</html>
